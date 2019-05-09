@@ -147,7 +147,7 @@
       fetchRdf() {
         this.$Progress.start();
         const parser = new N3.Parser();
-        axios.get("https://bd-performance.andrew.cmu.edu:3677/" + document.getElementById('ttlBar').value).then(res => parser.parse(res.data, this.store))
+        axios.get("https://cors-anywhere.herokuapp.com/" + document.getElementById('ttlBar').value).then(res => parser.parse(res.data, this.store))
 
       },
       store(err, quad) {
