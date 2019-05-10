@@ -20,7 +20,7 @@
 
 
           <div class="detail" v-if="current.name">
-            <div class="detailKey">XFDSS
+            <div class="detailKey">
               Name:
             </div>
             <div class="detailValue">
